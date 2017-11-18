@@ -4,25 +4,35 @@
 
 bool isLuhnAlgVerified(char *nb)
 {
-    char c[20];
+    char c[20][20];
+    char tmp[10];
     int total = 0;
     int subtotal = 0;
     int i = 0;
     int x = 0;
-    while (i <= strlen(nb))
+    while (i < strlen(nb))
     {
-        if (i % 2 == 0)
+        if (i % 2 != 0)
         {
-            c[x] = nb[i] * 2;
+            sprintf(tmp, "%i", ((nb[i] - '0') * 2));
+            if (atoi(tmp) > 9)
+            {
+                strcpy(c[x], "1");
+                x++;
+            }
+            sprintf(tmp, "%i", (atoi(tmp) % 10));
+            strcpy(c[x], tmp);
             x++;
         }
+        else
+            total = total + (nb[i] - '0');
         i++;
     }
-    c[x] = '\0';
+    strcpy(c[x], "\0");
     i = 0;
-    while (i <= strlen(c))
+    while (strcmp(c[i], "\0") != 0)
     {
-        subtotal = subtotal + c[x];
+        subtotal = subtotal + atoi(c[i]);
         i++;
     }
     if ((total + subtotal) % 10 == 0)
@@ -42,8 +52,8 @@ bool isValid(char *nb)
 bool isMastercard(char *nb)
 {
     int len = strlen(nb);
-    if (len == 16 && nb[0] == 5 &&
-        (nb[1] == 1 || nb[1] == 2 || nb[1] == 3 || nb[1] == 4 || nb[1] == 5))
+    if (len == 16 && nb[0] == '5' &&
+        (nb[1] == '1' || nb[1] == '2' || nb[1] == '3' || nb[1] == '4' || nb[1] == '5'))
         return true;
     return false;
 }
@@ -51,7 +61,7 @@ bool isMastercard(char *nb)
 bool isVisa(char *nb)
 {
     int len = strlen(nb);
-    if ((len != 16 && len != 13) && nb[0] != 4)
+    if ((len != 16 && len != 13) && nb[0] != '4')
         return false;
     return true;
 }
@@ -59,8 +69,8 @@ bool isVisa(char *nb)
 bool isAmex(char *nb)
 {
     int len = strlen(nb);
-    if (len == 15 && nb[0] == 3 &&
-        (nb[1] == 4 || nb[1] == 7))
+    if (len == 15 && nb[0] == '3' &&
+        (nb[1] == '4' || nb[1] == '7'))
         return true;
     return false;
 }
