@@ -10,7 +10,7 @@ NAME            =       hello
 all:    $(NAME)
 
 $(NAME):	$(OBJ)
-			cc $(OBJ) -o $(NAME)
+			clang $(OBJ) -o $(NAME) -lcs50
 
 clean:
 		rm -rf $(OBJ) $(OBJLIB)
