@@ -1,6 +1,9 @@
 # Harvard cs50 Computer Science Course
 Harvard CS50 is a course on edX educational platform.  
 https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
+#### Requirements
+In order to make those program compile, you'll have to install the libcs50 :
+https://github.com/cs50/libcs50
 
 ## pset1: C
 water.c : a program to convert shower's length (in minutes) to equivalent water bottles
