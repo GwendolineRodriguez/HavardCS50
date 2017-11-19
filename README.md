@@ -1,5 +1,5 @@
 # Harvard cs50 Computer Science Course
-Harvard CS50 is a course on edX educational platform.
+Harvard CS50 is a course on edX educational platform.  
 https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
 
 ## pset1: C
