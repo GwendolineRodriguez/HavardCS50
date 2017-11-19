@@ -39,16 +39,16 @@ Negh zf av huf pcfx bt gzrwep oz
 ```
 
 crack.c : a program that cracks passwords, per the below.
-```javascript
-$ ./crack \50fkUxYHbnXGw
+```
+$ ./crack 50fkUxYHbnXGw
 rofl
 ```
 
 ## pset3: Game of Fifteen
 find.c : a program that finds a number among numbers, per the below.
-```javascript
+```
 $ ./generate 1000 | ./find 42
-Didn\'t find needle in haystack.
+Didn't find needle in haystack.
 ```
 
 fifteen.c : a game of fifteen games
