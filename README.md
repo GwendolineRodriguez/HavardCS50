@@ -1,9 +1,9 @@
 # Harvard cs50 Computer Science Course
 Harvard CS50 is a course on edX educational platform.  
 https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
+
 #### Requirements
-In order to make those program compile, you'll have to install the libcs50 :
-https://github.com/cs50/libcs50
+In order to make those program compile, you'll have to install the [libcs50](https://github.com/cs50/libcs50)
 
 ## pset1: C
 water.c : a program to convert shower's length (in minutes) to equivalent water bottles
@@ -40,7 +40,7 @@ Negh zf av huf pcfx bt gzrwep oz
 
 crack.c : a program that cracks passwords, per the below.
 ```javascript
-$ ./crack 50fkUxYHbnXGw
+$ ./crack \50fkUxYHbnXGw
 rofl
 ```
 
@@ -48,7 +48,7 @@ rofl
 find.c : a program that finds a number among numbers, per the below.
 ```javascript
 $ ./generate 1000 | ./find 42
-Didn't find needle in haystack.
+Didn\'t find needle in haystack.
 ```
 
 fifteen.c : a game of fifteen games
