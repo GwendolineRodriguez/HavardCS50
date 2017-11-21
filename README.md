@@ -5,20 +5,20 @@ https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
 ## Table of Contents
 <!-- MarkdownTOC depth=4 -->
 - [Requirements](#requirement)
-- [pset1](#pset1): C Basics
+- [pset1](#pset1): **C Basics**
     - Data types, Operators, Conditionals statements, Loops.
-- [pset2](#pset2): Arrays, Intro to Cryptography
+- [pset2](#pset2): **Arrays, Intro to Cryptography**
     - Functions, Variables and Scope, Command Line Args, Arrays.
-- [pset3](#pset3): Algorythms, Intro to Video Games
+- [pset3](#pset3): **Algorythms, Intro to Video Games**
     - Sort Algorythms, Computational Complexity.
     - Game of fifteen
-- [pset4](#pset4): Memory, Intro to Forensics
+- [pset4](#pset4): **Memory, Intro to Forensics**
     - Pointers, Dynamic Memory Allocation, Structures, Recursion, Call Stack.
     - Resize images, recover photos.
-- [pset5](#pset5): Data Structure
+- [pset5](#pset5): **Data Structure**
     - Singly-Linked List, Doubly-Linked List, Stacks, Queues, Hash Tables.
     - SpellChecker, Mispellings
-- [pset6](#pset6): Python, Intro to Machine Learning
+- [pset6](#pset6): **Python, Intro to Machine Learning**
     - Analyse some sentiment
 
 <a name="requirement"></a>
