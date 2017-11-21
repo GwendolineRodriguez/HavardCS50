@@ -2,10 +2,33 @@
 Harvard CS50 is a course on edX educational platform.  
 https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
 
-#### Requirements
+## Table of Contents
+<!-- MarkdownTOC depth=4 -->
+- [Requirements](#requirement)
+- [pset1](#pset1) C Basics
+    - Data types, Operators, Conditionals statements, Loops.
+- [pset2](#pset2) Arrays, Intro to Cryptography
+    - Functions, Variables and Scope, Command Line Args, Arrays.
+- [pset3](#pset3) Algorythms, Intro to Video Games
+    - Sort Algorythms, Computational Complexity.
+    - Game of fifteen
+- [pset4](#pset4) Memory, Intro to Forensics
+    - Pointers, Dynamic Memory Allocation, Structures, Recursion, Call Stack.
+    - Resize images, recover photos.
+- [pset5](#pset5) Data Structure
+    - Singly-Linked List, Doubly-Linked List, Stacks, Queues, Hash Tables.
+    - SpellChecker, Mispellings
+- [pset6](#pset6) Python, Intro to Machine Learning
+    - Analyse some sentiment
+
+<a name="requirement"></a>
+
+## Requirements
 In order to make those program compile, you'll have to install the [libcs50](https://github.com/cs50/libcs50)
 
-## pset1: C
+<a name="pset1"></a>
+
+## [pset1](./pset1): C Basics
 water.c : a program to convert shower's length (in minutes) to equivalent water bottles
 ```javascript
 $ ./water
@@ -29,7 +52,9 @@ Number: 378282246310005
 AMEX
 ```
 
-## pset2: Crypto
+<a name="pset2"></a>
+
+## [pset2](./pset2): Arrays, Intro to Cryptography
 
 vigenere.c : a program to vigenere cipher a text
 ```javascript
@@ -44,7 +69,9 @@ $ ./crack 50fkUxYHbnXGw
 rofl
 ```
 
-## pset3: Game of Fifteen
+<a name="pset3"></a>
+
+## [pset3](./pset3): Algorythms, Intro to Video Games
 find.c : a program that finds a number among numbers, per the below.
 ```
 $ ./generate 1000 | ./find 42
@@ -66,7 +93,9 @@ $ ./fifteen 4
 Tile to move:
 ```
 
-## pset4: Forensics
+<a name="pset4"></a>
+
+## [pset4](./pset4): Memory, Intro to Forensics
 whodunit.c : a program that intelligently analyze an image (clue.bmp) and turn it to a better image (verdict.bmp)
 ```javascript
 $ ./whodunit clue.bmp verdict.bmp
@@ -95,9 +124,11 @@ $ ./recover
 ```
 ![Image of before and after](https://s29.postimg.org/whkiz0dlj/test.png)
 
-## pset5: Spellchecker
+<a name="pset5"></a>
+
+## [pset5](./pset5): Data Structure, SpellChecker, Mispellings
 ```javascript
-$ ./speller dictionaries/large endi.txt
+$ ./speller texts/austinpowers.txt
 
 MISSPELLED WORDS
 
@@ -122,8 +153,9 @@ TIME IN unload:       0.06
 TIME IN TOTAL:        0.16
 ```
 
+<a name="pset6"></a>
 
-## pset6: Python
+## [pset6](./pset6): Intro to Machine Learning with Python
 Requirements & Dependencies:
 ```javascript
 cd ~/workspace/pset6/sentiments/
@@ -142,9 +174,8 @@ Height: 4
 
 ```javascript
 $ python credit.py
-O hai! How much change is owed?
-0.41
-4
+Number: 378282246310005
+AMEX
 ```
 
 ```javascript
@@ -154,7 +185,14 @@ Negh zf av huf pcfx bt gzrwep oz
 ```
 
 ### Sentiments
-
+#### Usage: 
+```javascript
+$ export API_KEY= <insert your API_KEY from Twitter here>
+$ export API_SECRET= <insert your API_SECRET from Twitter here>
+$ export FLASK_APP=application.py
+$ export FLASK_DEBUG=1
+$ flask run
+```
 smile.py : a program that categorizes a word as positive or negative
 
 [![smile.png](https://s28.postimg.org/jzsjsjkod/smile.png)](https://postimg.org/image/907cgxu95/)
@@ -165,12 +203,3 @@ tweets.py categorizes a user’s recent 100 tweets as positive or negative (uses
 
 Implement a website that generates a pie chart categorizing a user’s tweets
 [![sentiments.png](https://s23.postimg.org/ortjkn7vf/sentiments.png)](https://postimg.org/image/o2ar8a7br/)
-
-#### Usage: 
-```javascript
-$ export API_KEY= <insert your API_KEY from Twitter here>
-$ export API_SECRET= <insert your API_SECRET from Twitter here>
-$ export FLASK_APP=application.py
-$ export FLASK_DEBUG=1
-$ flask run
-```
