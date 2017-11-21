@@ -5,30 +5,31 @@ https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
 ## Table of Contents
 <!-- MarkdownTOC depth=4 -->
 - [Requirements](#requirement)
-- [pset1](#pset1) C Basics
+- [pset1](#pset1): C Basics
     - Data types, Operators, Conditionals statements, Loops.
-- [pset2](#pset2) Arrays, Intro to Cryptography
+- [pset2](#pset2): Arrays, Intro to Cryptography
     - Functions, Variables and Scope, Command Line Args, Arrays.
-- [pset3](#pset3) Algorythms, Intro to Video Games
+- [pset3](#pset3): Algorythms, Intro to Video Games
     - Sort Algorythms, Computational Complexity.
     - Game of fifteen
-- [pset4](#pset4) Memory, Intro to Forensics
+- [pset4](#pset4): Memory, Intro to Forensics
     - Pointers, Dynamic Memory Allocation, Structures, Recursion, Call Stack.
     - Resize images, recover photos.
-- [pset5](#pset5) Data Structure
+- [pset5](#pset5): Data Structure
     - Singly-Linked List, Doubly-Linked List, Stacks, Queues, Hash Tables.
     - SpellChecker, Mispellings
-- [pset6](#pset6) Python, Intro to Machine Learning
+- [pset6](#pset6): Python, Intro to Machine Learning
     - Analyse some sentiment
 
 <a name="requirement"></a>
 
 ## Requirements
-In order to make those program compile, you'll have to install the [libcs50](https://github.com/cs50/libcs50)
+You'll have to install the [libcs50](https://github.com/cs50/libcs50)  
+and add the flag -lcs50 when compiling, unless a makefile is present.
 
 <a name="pset1"></a>
 
-## [pset1](./pset1): C Basics
+## [pset1](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset1): C Basics
 water.c : a program to convert shower's length (in minutes) to equivalent water bottles
 ```javascript
 $ ./water
@@ -54,7 +55,7 @@ AMEX
 
 <a name="pset2"></a>
 
-## [pset2](./pset2): Arrays, Intro to Cryptography
+## [pset2](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset2): Arrays, Intro to Cryptography
 
 vigenere.c : a program to vigenere cipher a text
 ```javascript
@@ -71,7 +72,7 @@ rofl
 
 <a name="pset3"></a>
 
-## [pset3](./pset3): Algorythms, Intro to Video Games
+## [pset3](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset3): Algorythms, Intro to Video Games
 find.c : a program that finds a number among numbers, per the below.
 ```
 $ ./generate 1000 | ./find 42
@@ -95,7 +96,7 @@ Tile to move:
 
 <a name="pset4"></a>
 
-## [pset4](./pset4): Memory, Intro to Forensics
+## [pset4](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset4): Memory, Intro to Forensics
 whodunit.c : a program that intelligently analyze an image (clue.bmp) and turn it to a better image (verdict.bmp)
 ```javascript
 $ ./whodunit clue.bmp verdict.bmp
@@ -126,7 +127,7 @@ $ ./recover
 
 <a name="pset5"></a>
 
-## [pset5](./pset5): Data Structure, SpellChecker, Mispellings
+## [pset5](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset5): Data Structure, SpellChecker, Mispellings
 ```javascript
 $ ./speller texts/austinpowers.txt
 
@@ -155,7 +156,7 @@ TIME IN TOTAL:        0.16
 
 <a name="pset6"></a>
 
-## [pset6](./pset6): Intro to Machine Learning with Python
+## [pset6](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset6): Intro to Machine Learning with Python
 Requirements & Dependencies:
 ```javascript
 cd ~/workspace/pset6/sentiments/
