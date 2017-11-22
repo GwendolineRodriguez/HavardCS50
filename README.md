@@ -24,8 +24,7 @@ https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
 <a name="requirement"></a>
 
 ## Requirements
-You'll have to install the [libcs50](https://github.com/cs50/libcs50)  
-and add the flag -lcs50 when compiling, unless a makefile is present.
+You'll have to install the [libcs50](https://github.com/cs50/libcs50) and add the flag -lcs50 when compiling.
 
 <a name="pset1"></a>
 
