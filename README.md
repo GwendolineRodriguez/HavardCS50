@@ -155,7 +155,7 @@ TIME IN TOTAL:        0.16
 
 <a name="pset6"></a>
 
-## [pset6](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset6): Intro to Machine Learning with Python
+## [pset6](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset6): Python, Intro to Machine Learning
 Requirements & Dependencies:
 ```javascript
 cd ~/workspace/pset6/sentiments/
