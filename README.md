@@ -10,7 +10,7 @@ https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
 - [pset2](#pset2): **Arrays, Intro to Cryptography**
     - Functions, Variables and Scope, Command Line Args, Arrays.
 - [pset3](#pset3): **Algorythms, Intro to Video Games**
-    - Sort Algorythms, Computational Complexity.
+    - Sort Algorythms, Computational Complexity, Makefiles.
     - Game of fifteen
 - [pset4](#pset4): **Memory, Intro to Forensics**
     - Pointers, Dynamic Memory Allocation, Structures, Recursion, Call Stack.
