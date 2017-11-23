@@ -54,7 +54,7 @@ AMEX
 
 <a name="pset2"></a>
 
-## [pset2](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset2): Arrays, Intro to Cryptography
+## [pset2](./pset2/): Arrays, Intro to Cryptography
 
 vigenere.c : a program to vigenere cipher a text
 ```javascript
@@ -71,7 +71,7 @@ rofl
 
 <a name="pset3"></a>
 
-## [pset3](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset3): Algorythms, Intro to Video Games
+## [pset3](./pset3/): Algorythms, Intro to Video Games
 find.c : a program that finds a number among numbers, per the below.
 ```
 $ ./generate 1000 | ./find 42
@@ -95,7 +95,7 @@ Tile to move:
 
 <a name="pset4"></a>
 
-## [pset4](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset4): Memory, Intro to Forensics
+## [pset4](./pset4/): Memory, Intro to Forensics
 whodunit.c : a program that intelligently analyze an image (clue.bmp) and turn it to a better image (verdict.bmp)
 ```javascript
 $ ./whodunit clue.bmp verdict.bmp
@@ -126,7 +126,7 @@ $ ./recover
 
 <a name="pset5"></a>
 
-## [pset5](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset5): Data Structure, SpellChecker, Mispellings
+## [pset5](./pset5/): Data Structure, SpellChecker, Mispellings
 ```javascript
 $ ./speller texts/austinpowers.txt
 
@@ -155,7 +155,7 @@ TIME IN TOTAL:        0.16
 
 <a name="pset6"></a>
 
-## [pset6](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset6): Python, Intro to Machine Learning
+## [pset6](./pset6/): Python, Intro to Machine Learning
 Requirements & Dependencies:
 ```javascript
 cd ~/workspace/pset6/sentiments/
