@@ -28,7 +28,7 @@ You'll have to install the [libcs50](https://github.com/cs50/libcs50) and add th
 
 <a name="pset1"></a>
 
-## [pset1](https://github.com/GwendolineRodriguez/HavardCS50/tree/master/pset1): C Basics
+## [pset1](./pset1/): C Basics
 water.c : a program to convert shower's length (in minutes) to equivalent water bottles
 ```javascript
 $ ./water
