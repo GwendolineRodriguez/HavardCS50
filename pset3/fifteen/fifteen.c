@@ -11,7 +11,7 @@
  * Note that usleep is obsolete, but it offers more granularity than
  * sleep and is simpler to use than nanosleep; `man usleep` for more.
  */
- 
+
 #define _XOPEN_SOURCE 500
 
 #include <cs50.h>
@@ -51,7 +51,7 @@ int main(int argc, string argv[])
     if (d < DIM_MIN || d > DIM_MAX)
     {
         printf("Board must be between %i x %i and %i x %i, inclusive.\n",
-            DIM_MIN, DIM_MIN, DIM_MAX, DIM_MAX);
+               DIM_MIN, DIM_MIN, DIM_MAX, DIM_MAX);
         return 2;
     }
 
@@ -102,7 +102,7 @@ int main(int argc, string argv[])
         // prompt for move
         printf("Tile to move: ");
         int tile = get_int();
-        
+
         // quit if user inputs 0 (for testing)
         if (tile == 0)
         {
@@ -123,7 +123,7 @@ int main(int argc, string argv[])
         // sleep thread for animation's sake
         usleep(500000);
     }
-    
+
     // close log
     fclose(file);
 
@@ -156,7 +156,23 @@ void greet(void)
  */
 void init(void)
 {
-    // TODO
+    int tile = d * d - 1;
+    // row
+    for (int row = 0; row < d; row++)
+    {
+        // col
+        for (int col = 0; col < d; col++)
+        {
+            board[row][col] = tile;
+            tile--;
+        }
+    }
+    // swap 1 and 2 if # of tiles is odd
+    if (d * d % 2 > 0)
+    {
+        board[d - 1][d - 3] = 1;
+        board[d - 1][d - 2] = 2;
+    }
 }
 
 /**
@@ -164,7 +180,14 @@ void init(void)
  */
 void draw(void)
 {
-    // TODO
+    for (int row = 0; row < d; row++)
+    {
+        for (int col = 0; col < d; col++)
+        {
+            printf("%2d ", board[row][col]);
+        }
+        printf("\n");
+    }
 }
 
 /**
@@ -173,7 +196,46 @@ void draw(void)
  */
 bool move(int tile)
 {
-    // TODO
+    int blank_row;
+    int blank_col;
+
+    // find the position of the blank tile and the tile
+    for (int row = 0; row < d; row++)
+    {
+        for (int col = 0; col < d; col++)
+        {
+            if (board[row][col] == 0)
+            {
+                blank_row = row;
+                blank_col = col;
+            }
+        }
+    }
+
+    if (tile == board[blank_row][blank_col - 1])
+    {
+        board[blank_row][blank_col] = tile;
+        board[blank_row][blank_col - 1] = 0;
+        return true;
+    }
+    else if (tile == board[blank_row][blank_col + 1])
+    {
+        board[blank_row][blank_col] = tile;
+        board[blank_row][blank_col + 1] = 0;
+        return true;
+    }
+    else if (tile == board[blank_row - 1][blank_col])
+    {
+        board[blank_row][blank_col] = tile;
+        board[blank_row - 1][blank_col] = 0;
+        return true;
+    }
+    else if (tile == board[blank_row + 1][blank_col])
+    {
+        board[blank_row][blank_col] = tile;
+        board[blank_row + 1][blank_col] = 0;
+        return true;
+    }
     return false;
 }
 
@@ -183,6 +245,19 @@ bool move(int tile)
  */
 bool won(void)
 {
-    // TODO
-    return false;
+    for (int row = 0; row < d; row++)
+    {
+        for (int col = 0; col < d - 1; col++)
+        {
+            if (board[row][col + 1] < board[row][col])
+            {
+                return false;
+            }
+            else if (board[d - 1][d - 1] == 0)
+            {
+                return false;
+            }
+        }
+    }
+    return true;
 }
