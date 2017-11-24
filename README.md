@@ -156,11 +156,6 @@ TIME IN TOTAL:        0.16
 <a name="pset6"></a>
 
 ## [pset6](./pset6/): Python, Intro to Machine Learning
-Requirements & Dependencies:
-```javascript
-cd ~/workspace/pset6/sentiments/
-pip3 install --user -r requirements.txt
-```
 
 ### Convert some of pset1 and 2 .c programs to .py
 ```javascript
@@ -185,6 +180,11 @@ Negh zf av huf pcfx bt gzrwep oz
 ```
 
 ### Sentiments
+Requirements & Dependencies:
+```javascript
+cd ~/workspace/pset6/sentiments/
+pip3 install --user -r requirements.txt
+```
 #### Usage: 
 ```javascript
 $ export API_KEY= <insert your API_KEY from Twitter here>
