@@ -115,8 +115,8 @@ $ ./resize 4 small.bmp large.bmp
 
 Before and after running resize.c
 
-![Image of small](./pset4/resize/small.png)
-![Image of large](./pset4/resize/large.png)
+![Image of small](./pset4/resize/small.bmp)
+![Image of large](./pset4/resize/large.bmp)
 
 recover.c : a program that recovers .jpeg images from card.raw
 ```javascript
