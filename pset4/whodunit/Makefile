@@ -1,8 +1,8 @@
-SRC             =       copy.c
+SRC             =       whodunit.c
 
 OBJ             =       $(SRC:.c=.o)
 
-NAME            =       copy
+NAME            =       whodunit
 
 all:    $(NAME)
 
@@ -10,10 +10,10 @@ $(NAME):	$(OBJ)
 			clang $(OBJ) -o $(NAME) -lcs50
 
 clean:
-		rm -rf $(OBJ) $(OBJLIB)
+		rm -rf $(OBJ)
 
 fclean: clean
-		rm -rf $(LIB)
+		rm -rf $(NAME)
 
 re:		fclean all
 		make re -C
