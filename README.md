@@ -102,11 +102,11 @@ $ ./whodunit clue.bmp verdict.bmp
 ```
 Before running whodunit.c
 
-![Image of clue](./pset4/clue.bmp)
+![Image of clue](./pset4/whodunit/clue.bmp)
 
 After running whodunit.c
 
-![Image of verdict](./pset4/verdict.bmp)
+![Image of verdict](./pset4/whodunit/verdict.bmp)
 
 resize.c : a program that can enlarge an image to n size
 ```javascript
