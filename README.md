@@ -100,11 +100,11 @@ whodunit.c : a program that intelligently analyze an image (clue.bmp) and turn i
 ```javascript
 $ ./whodunit clue.bmp verdict.bmp
 ```
-Before running whodunit.c
+clue.bmp : 
 
 ![Image of clue](./pset4/whodunit/clue.bmp)
 
-After running whodunit.c
+Creation of verdict.bmp : 
 
 ![Image of verdict](./pset4/whodunit/verdict.bmp)
 
