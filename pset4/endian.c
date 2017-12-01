@@ -14,9 +14,9 @@ int main()
     if ((mycar = malloc(sizeof(car_t))) == 0)
         return 1;
     struct car secondcar;
-    // Static access // stack // memory allocated in the program
+    // Static access // stack // memory allocated in the executable program // lifetime of the program
     secondcar.year = 2008;
-    // Dynamic access // heap // memory extern of the program
+    // Dynamic access // heap // memory extern of the program // lifetime controlable
     (*mycar).year = 2008;
     mycar->year = 1989;
     unsigned int i = 1;
