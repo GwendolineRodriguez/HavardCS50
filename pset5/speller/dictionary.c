@@ -21,6 +21,7 @@ bool check(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
+    // implement dictionary data structure tries
     return false;
 }
 
@@ -39,5 +40,12 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
+    // node *cursor;
+    // while (cursor != NULL)
+    // {
+    //     node *tmp = cursor;
+    //     cursor = cursor->next;
+    //     free(tmp);
+    // }
     return false;
 }
