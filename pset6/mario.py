@@ -10,9 +10,9 @@ def checkNb(nb):
 
 def drawPyramid(height):
     i = 0
-    c = 0
     gap = "  "
     while i < height:
+        c = 0
         space = height - i
         while c <= i:
             while space > 0:
@@ -20,7 +20,7 @@ def drawPyramid(height):
                 space -= 1
             print("#", end='')
             c += 1
-        print(gap)
+        print(gap, end='')
         c = 0
         while c <= i:
             print("#", end='')
