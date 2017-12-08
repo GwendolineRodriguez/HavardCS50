@@ -29,19 +29,22 @@ def isLuhnAlgVerified(nb):
         return True
     return False
 
+
 def isValid(nb):
     l = len(nb)
     if ((l == 15 or len == 16 or len == 13) and
-        isLuhnAlgVerified(nb)):
+            isLuhnAlgVerified(nb)):
         return True
     return False
+
 
 def isMasterCard(nb):
     l = len(nb)
     if (l == 16 and nb[0] == '5' and
-        (nb[1] == '1' or nb[1] == '2' or nb[1] == '3' or nb[1] == '4' or nb[1] == '5')):
+            (nb[1] == '1' or nb[1] == '2' or nb[1] == '3' or nb[1] == '4' or nb[1] == '5')):
         return True
     return False
+
 
 def isVisa(nb):
     l = len(nb)
@@ -49,12 +52,14 @@ def isVisa(nb):
         return False
     return True
 
+
 def isAmex(nb):
     l = len(nb)
-    if (l == 15 and nb[0] == '3' and 
-     (nb[1] == '4' or nb[1] == '7')):
+    if (l == 15 and nb[0] == '3' and
+            (nb[1] == '4' or nb[1] == '7')):
         return True
     return False
+
 
 def checkCard(nb):
     if isMasterCard(nb):
@@ -63,6 +68,7 @@ def checkCard(nb):
         print("VISA")
     elif isAmex(nb):
         print("AMEX")
+
 
 def main():
     print("Number : ", end='')
