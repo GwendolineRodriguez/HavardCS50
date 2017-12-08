@@ -120,7 +120,7 @@ Before and after running resize.c
 
 recover.c : a program that recovers .jpeg images from card.raw
 ```javascript
-$ ./recover
+$ ./recover card.raw
 ```
 ![Image of before](./pset4/recover/beforerecover.png)
 ![Image of after](./pset4/recover/afterrecover.png)
