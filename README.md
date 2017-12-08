@@ -24,7 +24,7 @@ https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
 <a name="requirement"></a>
 
 ## Requirements
-You'll have to install the [libcs50](https://github.com/cs50/libcs50) and add the flag -lcs50 when compiling.
+You'll have to install the [libcs50](https://github.com/cs50/libcs50) and add the flag -lcs50 when compiling the c files.
 
 <a name="pset1"></a>
 
@@ -122,7 +122,8 @@ recover.c : a program that recovers .jpeg images from card.raw
 ```javascript
 $ ./recover
 ```
-![Image of before and after](https://s29.postimg.org/whkiz0dlj/test.png)
+![Image of before](./pset4/recover/beforerecover.png)
+![Image of after](./pset4/resize/afterrecover.png)
 
 <a name="pset5"></a>
 
@@ -173,10 +174,9 @@ Number: 378282246310005
 AMEX
 ```
 
-```javascript
-$ python vigenere.py bacon
-Meet me at the park at eleven am
-Negh zf av huf pcfx bt gzrwep oz
+```python
+$ python crack.py 50fkUxYHbnXGw
+rofl
 ```
 
 ### Sentiments
