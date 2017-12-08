@@ -174,7 +174,7 @@ Number: 378282246310005
 AMEX
 ```
 
-```python
+```
 $ python crack.py 50fkUxYHbnXGw
 rofl
 ```
