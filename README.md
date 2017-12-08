@@ -195,6 +195,15 @@ $ flask run
 ```
 smile.py : a program that categorizes a word as positive or negative
 
+```diff
+$ ./smile love
++ :)
+$ ./smile hate
+- :(
+$ ./smile nanyang
+:|
+```
+
 [![smile.png](https://s28.postimg.org/jzsjsjkod/smile.png)](https://postimg.org/image/907cgxu95/)
 
 tweets.py categorizes a user’s recent 100 tweets as positive or negative (uses Twitter API)
