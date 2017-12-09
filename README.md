@@ -187,8 +187,8 @@ pip3 install --user -r requirements.txt
 ```
 #### Usage: 
 ```javascript
-$ export API_KEY= <insert your API_KEY from Twitter here>
-$ export API_SECRET= <insert your API_SECRET from Twitter here>
+$ export API_KEY=API_KEY
+$ export API_SECRET=API_SECRET
 $ export FLASK_APP=application.py
 $ export FLASK_DEBUG=1
 $ flask run
@@ -213,5 +213,5 @@ $ ./tweets @cs50
 -1 I hate you, @world
 ```
 
-Implement a website that generates a pie chart categorizing a user’s tweets
+Implement a website that generates a pie chart categorizing a user’s tweets  
 ![sentiments.png](./pset6/sentiments/sentiments.png)
