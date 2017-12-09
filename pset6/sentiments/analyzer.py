@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import nltk
 
 
@@ -11,19 +12,19 @@ class Analyzer():
         file = open(positives, "r")
         for line in file:
             if not line.startswith(';'):
-                self.positiveWords.add(line.strip(" "))
+                self.positiveWords.add(line.strip("\n"))
         file.close()
 
         file = open(negatives, "r")
         for line in file:
             if not line.startswith(';'):
-                self.negativeWords.add(line.strip(" "))
+                self.negativeWords.add(line.strip("\n"))
         file.close()
 
     def analyze(self, text):
         """Analyze text for sentiment, returning its score."""
-
-        words = text.split()
+        tokenizer = nltk.tokenize.TweetTokenizer()
+        words = tokenizer.tokenize(text)
         score = 0
         for word in words:
             if word.lower() in self.negativeWords:
