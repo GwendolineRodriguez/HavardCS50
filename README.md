@@ -181,10 +181,12 @@ rofl
 
 ### Sentiments
 Requirements & Dependencies:
+
 ```javascript
 cd ~/workspace/pset6/sentiments/
 pip3 install --user -r requirements.txt
 ```
+
 #### Usage: 
 ```javascript
 $ export API_KEY=API_KEY
@@ -193,6 +195,7 @@ $ export FLASK_APP=application.py
 $ export FLASK_DEBUG=1
 $ flask run
 ```
+
 smile.py : a program that categorizes a word as positive or negative
 
 ```diff
@@ -214,4 +217,5 @@ $ ./tweets @cs50
 ```
 
 Implement a website that generates a pie chart categorizing a user’s tweets  
+
 ![sentiments.png](./pset6/sentiments/sentiments.png)
