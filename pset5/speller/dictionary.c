@@ -6,6 +6,9 @@
 
 #include "dictionary.h"
 
+unsigned int nbWordsLoaded = 0;
+
+
 /**
  * Returns true if word is in dictionary else false.
  */
@@ -30,8 +33,7 @@ bool load(const char *dictionary)
  */
 unsigned int size(void)
 {
-    // TODO
-    return 0;
+    return nbWordsLoaded;
 }
 
 /**
