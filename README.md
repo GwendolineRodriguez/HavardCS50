@@ -133,25 +133,25 @@ $ ./speller texts/austinpowers.txt
 
 MISSPELLED WORDS
 
-nme
-veri
-persan
-yo
-bro
-USConstitution
-http
-usconstitution
-const
-html
+[...]
+EVIL'S
+VO
+VO
+Virtucon
+PK
+[...]
+VO
+AUSITN
+VO
 
-WORDS MISSPELLED:     10
+WORDS MISSPELLED:     644
 WORDS IN DICTIONARY:  143091
-WORDS IN TEXT:        722
-TIME IN load:         0.10
-TIME IN check:        0.00
+WORDS IN TEXT:        19190
+TIME IN load:         0.04
+TIME IN check:        0.76
 TIME IN size:         0.00
-TIME IN unload:       0.06
-TIME IN TOTAL:        0.16
+TIME IN unload:       0.01
+TIME IN TOTAL:        0.81
 ```
 
 <a name="pset6"></a>
