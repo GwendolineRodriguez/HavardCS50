@@ -134,9 +134,10 @@ $ ./speller texts/austinpowers.txt
 MISSPELLED WORDS
 
 [...]
-EVIL'S
-VO
-VO
+VIRTUCON
+Bigglesworth
+Bigglesworth
+[...]
 Virtucon
 PK
 [...]
